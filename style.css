@@ -1,0 +1,4 @@
+/* Định dạng chung cho toàn trang */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+section { padding: 50px; text-align: center; }
+.hero-section { background-color: #f4f4f4; }
