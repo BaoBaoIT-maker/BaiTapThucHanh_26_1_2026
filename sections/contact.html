@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="hero"></div>
-    <div id="features"></div>
-    <div id="pricing"></div>
-    <div id="contact"></div>
- <script>
- function loadSection(id, file) {
-    fetch(file)
-    .then(res => res.text())
-    .then(html => {
-    document.getElementById(id).innerHTML = html;
-    });
- }
-    loadSection("hero", "sections/hero.html");
-    loadSection("features", "sections/features.html");
-    loadSection("pricing", "sections/pricing.html");
-    loadSection("contact", "sections/contact.html");
- </script>
-</body>
-</html>
+<section class="contact-section">
+    <div class="container">
+        <h2>Liên hệ với chúng tôi</h2>
+        <p>Để lại thông tin bên dưới, chúng tôi sẽ phản hồi sớm nhất!</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="contact-name">Họ và tên</label>
+                <input type="text" id="contact-name" placeholder="Họ và tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" placeholder="Địa chỉ Email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Nội dung tin nhắn</label>
+                <textarea id="contact-message" rows="5" placeholder="Nội dung tin nhắn"></textarea>
+            </div>
+            <button type="button" class="btn-submit">Gửi tin nhắn</button>
+        </form>
+    </div>
+</section>
