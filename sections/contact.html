@@ -5,13 +5,16 @@
         
         <form class="contact-form">
             <div class="form-group">
-                <input type="text" placeholder="Họ và tên của bạn" required>
+                <label for="contact-name">Họ và tên</label>
+                <input type="text" id="contact-name" placeholder="Họ và tên của bạn" required>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Địa chỉ Email" required>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" placeholder="Địa chỉ Email" required>
             </div>
             <div class="form-group">
-                <textarea rows="5" placeholder="Nội dung tin nhắn"></textarea>
+                <label for="contact-message">Nội dung tin nhắn</label>
+                <textarea id="contact-message" rows="5" placeholder="Nội dung tin nhắn"></textarea>
             </div>
             <button type="submit" class="btn-submit">Gửi tin nhắn</button>
         </form>
