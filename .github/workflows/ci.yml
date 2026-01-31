@@ -1,0 +1,17 @@
+name: Landing Page CI
+on:
+  pull_request:
+    branches: [ develop, main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kiểm tra file index.html
+        run: |
+          test -f index.html
+          echo "index.html tồn tại"
+      - name: Kiểm tra file style.css
+        run: |
+          test -f style.css
+          echo "style.css tồn tại"
